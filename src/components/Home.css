@@ -1,0 +1,28 @@
+.header {
+  height: 10vh;
+  background: #9c27b0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.category-inner-circle {
+  width: 95px;
+  height: 95px;
+  background: #2196f3;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.category-outer-circle {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    253.4deg,
+    rgba(64, 93, 230, 0.8) 31.1%,
+    rgba(147, 60, 219, 0.79) 51.28%,
+    rgba(193, 53, 132, 0.81) 69.63%,
+    rgba(253, 29, 29, 0.83) 86.15%
+  );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
