@@ -24,15 +24,17 @@ export default function StoriesSection() {
       if (item.type === "imageCaptionPost") {
         return {
           content: (props) => (
-            <div
-              className="story-container h-screen w-screen bg-center bg-no-repeat bg-black max-w-screen-md"
-              style={{ backgroundImage: `url(${item.image})` }}
-            >
+            <div className="story-container bg-black w-screen h-screen">
               <div
-                className="mt-12 caption text-5xl font-bold"
-                style={{ color: item.captionColor }}
+                className="w-full h-full max-w-screen-md flex items-center justify-center flex-col bg-center bg-no-repeat"
+                style={{ backgroundImage: `url(${item.image})` }}
               >
-                <span>{item.caption}</span>
+                <div
+                  className="mt-12 caption text-5xl font-bold"
+                  style={{ color: item.captionColor }}
+                >
+                  <span>{item.caption}</span>
+                </div>
               </div>
             </div>
           ),
@@ -41,27 +43,29 @@ export default function StoriesSection() {
         return {
           content: (props) => (
             <div
-              className="story-container h-screen w-screen bg-center bg-no-repeat bg-black text-white font-bold flex items-center flex-col"
+              className="story-container h-screen w-screen bg-center bg-no-repeat bg-black text-white font-bold flex items-center justify-center"
               style={{ backgroundColor: item.bgColor }}
             >
-              <div className="mt-10 text-xl max-w-screen-md">
-                <span>{item.title}</span>
-              </div>
-              <div className="flex flex justify-center items-center mt-2 text-story-image-container">
-                <div style={{ display: loading ? "block" : "none" }}>
-                  {renderLoading()}
+              <div className="max-w-screen-md flex items-center justify-center flex-col">
+                <div className="mt-10 text-x">
+                  <span>{item.title}</span>
                 </div>
-                <div style={{ display: loading ? "none" : "block" }}>
-                  <img
-                    src={item.image}
-                    alt="stories"
-                    className="h-6/12"
-                    onLoad={() => setLoading(false)}
-                  />
+                <div className="flex flex justify-center items-center mt-2 text-story-image-container">
+                  <div style={{ display: loading ? "block" : "none" }}>
+                    {renderLoading()}
+                  </div>
+                  <div style={{ display: loading ? "none" : "block" }}>
+                    <img
+                      src={item.image}
+                      alt="stories"
+                      className="h-6/12"
+                      onLoad={() => setLoading(false)}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="mt-6 caption text-lg text-left mx-3 max-w-screen-md">
-                <span className="whitespace-pre-wrap">{item.text}</span>
+                <div className="mt-6 caption text-lg text-left mx-3 max-w-screen-md">
+                  <span className="whitespace-pre-wrap">{item.text}</span>
+                </div>
               </div>
             </div>
           ),

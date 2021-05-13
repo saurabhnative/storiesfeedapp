@@ -15,7 +15,7 @@ const storiesData = {
     {
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/food3_rpm08i.jpg`,
       caption: "Wow",
-      captionColor: "black",
+      captionColor: "white",
       type: "imageCaptionPost",
     },
   ],
@@ -45,7 +45,7 @@ const storiesData = {
     {
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/travel2_o9gywv.jpg`,
       caption: "Hiking",
-      captionColor: "black",
+      captionColor: "white",
       type: "imageCaptionPost",
     },
   ],
