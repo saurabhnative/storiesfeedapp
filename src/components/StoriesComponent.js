@@ -26,7 +26,7 @@ export default function StoriesSection() {
           content: (props) => (
             <div className="story-container bg-black w-screen h-screen flex items-start justify-center">
               <div
-                className="w-full h-full max-w-screen-md flex items-center justify-center flex-col bg-center bg-no-repeat"
+                className="w-full h-full bg-black max-w-screen-md flex items-center justify-center flex-col bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${item.image})` }}
               >
                 <div
