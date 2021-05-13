@@ -1,83 +1,70 @@
 import React from "react";
-import { useRouteMatch, useHistory } from "react-router-dom";
 import Stories from "react-insta-stories";
+import { useRouteMatch, useHistory } from "react-router-dom";
 import StoriesData from "../dataSource/storiesData";
-export default function StoriesComponent() {
+import Fade from "react-reveal/Fade";
+import "./StoriesComponent.css";
+export default function StoriesSection() {
   const match = useRouteMatch();
   const history = useHistory();
-  function renderStories() {
-    const categoryName = match.params.categoryName;
-    const stories = StoriesData[categoryName].map((storyItem) => {
-      if (storyItem.type === "imageCaptionPost") {
+  function redirectToHome() {
+    history.push("/");
+  }
+  function getStoriesObject() {
+    const category = match.params.categoryName;
+    const stories = StoriesData[category].map((item) => {
+      if (item.type === "imageCaptionPost") {
         return {
-          content: ({ action, isPaused }) => {
-            return (
+          content: (props) => (
+            <div
+              className="story-container h-screen w-screen bg-center bg-no-repeat bg-black max-w-screen-md"
+              style={{ backgroundImage: `url(${item.image})` }}
+            >
               <div
-                className="w-screen h-screen flex justify-center items-center"
-                key={storyItem.caption}
+                className="mt-12 caption text-5xl font-bold"
+                style={{ color: item.captionColor }}
               >
-                <div
-                  className="w-full h-full bg-no-repeat bg-center max-w-screen-md flex justify-center items-center flex-col"
-                  style={{
-                    backgroundImage: `url(${storyItem.backgroundImageUrl})`,
-                  }}
-                >
-                  <div
-                    className="text-4xl text-white mt-5 font-bold"
-                    style={{ color: storyItem.captionColor }}
-                  >
-                    <span>{storyItem.caption}</span>
-                  </div>
-                </div>
+                <span>{item.caption}</span>
               </div>
-            );
-          },
+            </div>
+          ),
         };
-      } else if (storyItem.type === "textImagePost") {
+      } else if (item.type === "titleImageTextPost") {
         return {
-          content: ({ action, isPaused }) => {
-            return (
-              <div
-                className="w-screen h-screen flex justify-center items-center"
-                style={{
-                  backgroundColor: storyItem.backgroundColor,
-                }}
-                key={storyItem.caption}
-              >
-                <div className="max-w-screen-md flex justify-center items-center flex-col">
-                  <div
-                    className="text-4xl text-white mt-5 font-bold"
-                    style={{ color: storyItem.textColor }}
-                  >
-                    <span>{storyItem.title}</span>
-                  </div>
-                  <div>
-                    <img src={storyItem.postImageURL} alt="story" />
-                  </div>
-                  <div className="text-xl text-white mt-5 font-bold text-left ml-2">
-                    <span>{storyItem.text}</span>
-                  </div>
-                </div>
+          content: (props) => (
+            <div
+              className="story-container h-screen w-screen bg-center bg-no-repeat bg-black text-white font-bold flex items-center flex-col"
+              style={{ backgroundColor: item.bgColor }}
+            >
+              <div className="mt-10 text-xl max-w-screen-md">
+                <span>{item.title}</span>
               </div>
-            );
-          },
+              <div className="flex flex justify-center items-center mt-2 text-story-image-container">
+                <img src={item.image} alt="stories" className="h-6/12" />
+              </div>
+              <div className="mt-6 caption text-lg text-left mx-3 max-w-screen-md">
+                <span className="whitespace-pre-wrap">{item.text}</span>
+              </div>
+            </div>
+          ),
         };
+      } else {
+        return null;
       }
-      return null;
     });
     return stories;
   }
-  function goBackToHomePage() {
-    history.push("/");
-  }
   return (
-    <div className="flex justify-center items-center">
-      <Stories
-        stories={renderStories()}
-        width={"100vw"}
-        height={"100vh"}
-        onAllStoriesEnd={() => goBackToHomePage()}
-      />
+    <div className="stories-container w-screen h-screen">
+      <Fade right>
+        <Stories
+          stories={getStoriesObject()}
+          defaultInterval={5000}
+          width={"100%"}
+          height="100vh"
+          onAllStoriesEnd={redirectToHome}
+        />
+      </Fade>
     </div>
   );
 }
