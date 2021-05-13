@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Stories from "react-insta-stories";
 import { useRouteMatch, useHistory } from "react-router-dom";
 import StoriesData from "../dataSource/storiesData";
 import Fade from "react-reveal/Fade";
 import "./StoriesComponent.css";
 export default function StoriesSection() {
+  const [loading, setLoading] = useState(true);
   const match = useRouteMatch();
   const history = useHistory();
   function redirectToHome() {
     history.push("/");
+  }
+  function renderLoading() {
+    return (
+      <div className="flex justify-center items-center">
+        <svg class="loader animate-spin"></svg>
+      </div>
+    );
   }
   function getStoriesObject() {
     const category = match.params.categoryName;
@@ -40,7 +48,17 @@ export default function StoriesSection() {
                 <span>{item.title}</span>
               </div>
               <div className="flex flex justify-center items-center mt-2 text-story-image-container">
-                <img src={item.image} alt="stories" className="h-6/12" />
+                <div style={{ display: loading ? "block" : "none" }}>
+                  {renderLoading()}
+                </div>
+                <div style={{ display: loading ? "none" : "block" }}>
+                  <img
+                    src={item.image}
+                    alt="stories"
+                    className="h-6/12"
+                    onLoad={() => setLoading(false)}
+                  />
+                </div>
               </div>
               <div className="mt-6 caption text-lg text-left mx-3 max-w-screen-md">
                 <span className="whitespace-pre-wrap">{item.text}</span>
@@ -63,6 +81,7 @@ export default function StoriesSection() {
           width={"100%"}
           height="100vh"
           onAllStoriesEnd={redirectToHome}
+          onStoryEnd={() => setLoading(true)}
         />
       </Fade>
     </div>
