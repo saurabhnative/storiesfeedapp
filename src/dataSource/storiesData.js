@@ -68,23 +68,23 @@ const storiesData = {
   science: [
     {
       title: "Venus Rotation",
-      text: `Venus is the only planet in solar system which rotates in clockwise direction.`,
+      text: `Venus is the only planet in solar system which rotates in clockwise direction. It is hotter than Mercury despite being further away from the Sun and has 90 times the atmospheric pressure of Earth.`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/science1_wkmrvk.jpg`,
       bgColor: "#000000",
       type: "titleImageTextPost",
     },
     {
       title: "Plants",
-      text: `Plants emit light during photosynthesis which we can't see`,
+      text: `Plants emit light during photosynthesis which we can't see. They perform photosynthesis in organelles called chloroplasts. Chloroplasts contain chlorophyll, which is used in photosynthesis to make glucose.`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/science2_brnnsl.jpg`,
-      bgColor: "#F58529",
+      bgColor: "#4CAF50",
       type: "titleImageTextPost",
     },
   ],
   fitness: [
     {
       title: "Yoga",
-      text: `Ancient yogis believed that we only have a limited number of breaths in each life. Hence, it made sense to stretch our life out a bit longer by taking slow and deep breaths.`,
+      text: `Ancient yogis believed that we only have a limited number of breaths in each life. Hence, it made sense to stretch our life out a bit longer by taking slow and deep breaths. Taking deep breaths can help you in decreasing how much of the stress hormone cortisol is released into your body.`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/fitness1_x0xr1y.jpg`,
       bgColor: "#9C27B0",
       type: "titleImageTextPost",
@@ -109,21 +109,21 @@ const storiesData = {
       title: "Largest School",
       text: `The largest school in the world in terms of number of students is the City Montessori School in Lucknow, India. There were more than 56,000 students attending the school on a daily basis`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/school2_i3xrdw.jpg`,
-      bgColor: "#F58529",
+      bgColor: "#2196F3",
       type: "titleImageTextPost",
     },
   ],
   gaming: [
     {
       title: "Jumpman",
-      text: `Nintendo's main man, Mario, actually first appeared in the arcade game Donkey Kong on July 9, 1981, and he went by the name Jumpman.`,
+      text: `Nintendo's main man, Mario, actually first appeared in the arcade game Donkey Kong on July 9, 1981, and he went by the name Jumpman. When Mario first arrived on the scene, he was actually a carpenter. He had to climb an enormous construction site to save Pauline.`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/gaming1_xxcvqt.jpg`,
       bgColor: "#9C27B0",
       type: "titleImageTextPost",
     },
     {
       title: "Gaming in space",
-      text: `The Gameboy was the first video game console played in space.`,
+      text: `The Game Boy version of Tetris was the first game played in space. In 1993, Tetris traveled aboard a Soyuz TM-17 rocket to the MIR Space Station, where it was played by Russian cosmonaut Aleksandr A. Serebrov.`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/gaming2_wcfsai.jpg`,
       bgColor: "#F58529",
       type: "titleImageTextPost",
@@ -132,14 +132,14 @@ const storiesData = {
   social: [
     {
       title: "Second largest search engine",
-      text: `YouTube is the second largest search engine, taking second to Google with 3 billion searches a month.`,
+      text: `YouTube is the second largest search engine, taking second to Google with 3 billion searches a month. 37% of all mobile internet traffic belongs to YouTube.`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/social1_mymtgu.jpg`,
       bgColor: "#2196F3",
       type: "titleImageTextPost",
     },
     {
       title: "Social accounts",
-      text: `The average internet user has 7.6 social media accounts.`,
+      text: `The average internet user has 7.6 social media accounts. We spend a lifetime average of 5 years and 3 months on social media`,
       image: `${process.env.REACT_APP_CLOUDINARY_URL}/social2_xfony1.jpg`,
       bgColor: "#2196F3",
       type: "titleImageTextPost",
