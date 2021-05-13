@@ -43,7 +43,7 @@ export default function StoriesSection() {
         return {
           content: (props) => (
             <div
-              className="story-container h-screen w-screen bg-center bg-no-repeat bg-black text-white font-bold flex items-center justify-center"
+              className="story-container h-screen w-screen bg-center bg-no-repeat bg-black text-white font-bold flex items-start justify-center"
               style={{ backgroundColor: item.bgColor }}
             >
               <div className="max-w-screen-md flex items-center justify-center flex-col">
