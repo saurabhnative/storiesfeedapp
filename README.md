@@ -1,5 +1,5 @@
 # Storied Feed App
-### User can use this application to learn interesting facts about various categories like technology and fitness via stories
+### This application can be used to learn interesting facts about various categories like technology and fitness via stories
 
 App screenshots:-   
 <img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1620925611/StoriesFeedCompressed/Screenshot_2021-05-13_at_10.36.26_PM_pbtl8u.png" width="200"/> 
