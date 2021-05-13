@@ -52,7 +52,7 @@ export default function StoriesComponent() {
                     <span>{storyItem.title}</span>
                   </div>
                   <div>
-                    <img src={storyItem.postImageURL} />
+                    <img src={storyItem.postImageURL} alt="story" />
                   </div>
                   <div className="text-xl text-white mt-5 font-bold text-left ml-2">
                     <span>{storyItem.text}</span>
@@ -63,6 +63,7 @@ export default function StoriesComponent() {
           },
         };
       }
+      return null;
     });
     return stories;
   }
