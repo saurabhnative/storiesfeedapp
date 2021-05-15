@@ -59,7 +59,7 @@ export default function StoriesSection() {
                     <div style={{ display: loading ? "none" : "block" }}>
                       <img
                         src={item.image}
-                        alt="stories"
+                        alt="vaccine-info"
                         className="h-6/12"
                         onLoad={() => setLoading(false)}
                       />
