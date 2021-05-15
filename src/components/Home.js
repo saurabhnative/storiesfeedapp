@@ -20,7 +20,7 @@ export default function Home() {
         >
           <div className="category-outer-circle flex justify-center items-center">
             <div className="category-inner-circle flex justify-center items-center">
-              <img src={categoryItem.iconName} width="40" />
+              <img src={categoryItem.iconName} width="40" alt="vaccine-icon" />
             </div>
           </div>
           <div className="font-bold">{categoryItem.name}</div>
