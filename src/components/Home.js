@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
-import categoryItems from "../dataSource/categories";
+import vaccineNames from "../dataSource/vaccinesNames";
 import CreditsComponent from "./CreditsComponent";
 import { useHistory } from "react-router-dom";
 
@@ -11,7 +11,7 @@ export default function Home() {
     history.push(`/story/${categoryItem.name.toLowerCase()}`);
   }
   function renderCategoryItem() {
-    return categoryItems.map((categoryItem) => {
+    return vaccineNames.map((categoryItem) => {
       return (
         <div
           className="flex justify-center items-center flex-col mt-4 cursor-pointer"
@@ -20,7 +20,7 @@ export default function Home() {
         >
           <div className="category-outer-circle flex justify-center items-center">
             <div className="category-inner-circle flex justify-center items-center">
-              <i className="material-icons text-4xl">{categoryItem.iconName}</i>
+              <img src={categoryItem.iconName} width="40" />
             </div>
           </div>
           <div className="font-bold">{categoryItem.name}</div>
@@ -30,13 +30,13 @@ export default function Home() {
   }
   return (
     <div>
-      <div className="header text-white flex justify-center items-center text-3xl font-bold">
-        <div>Stories Feed</div>
+      <div className="header text-white flex justify-center items-center text-2xl font-bold">
+        <div>Covid Vaccines Information</div>
         <div
-          className="fixed top-3 right-4 cursor-pointer"
+          className="fixed top-3 right-1 cursor-pointer"
           onClick={() => setCreditsPopUpOpen(true)}
         >
-          <i className="material-icons text-4xl">info</i>
+          <i className="material-icons text-3xl">info</i>
         </div>
       </div>
       <div className="flex justify-center items-center">

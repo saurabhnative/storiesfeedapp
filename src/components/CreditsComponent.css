@@ -1,5 +1,5 @@
 a {
-  color: rgba(220, 38, 38, 1);
+  color: rgba(220, 38, 38, 1) !important;
 }
 
 .credits-container {

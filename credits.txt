@@ -25,3 +25,22 @@ Gaming2:- Image by <a href="https://pixabay.com/users/pencilparker-7519217/?utm_
 
 Social1:- Image by <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2311259">janjf93</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2311259">Pixabay</a>
 Social2:- Image by <a href="https://pixabay.com/users/gdj-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3846597">Gordon Johnson</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3846597">Pixabay</a>
+
+
+Information sources:-
+Wikipedia, Outlookindia articles, Bharat Biotech, Pharmeasy
+
+Vaccine icons:-
+<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/mavadee" title="mavadee">mavadee</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+Vaccine Images:-
+Covishield:- Photo by <a href="https://pixahive.com/portfolio/inderpreetkaur/">Inderpreet kaur</a> from Pixahive
+Covishield2:- Photo by <a href="https://pixahive.com/portfolio/inderpreetkaur/">Inderpreet kaur</a> from Pixahive
+
+Covaxin:- Photo by <a href="https://pixahive.com/portfolio/inderpreetkaur/">Inderpreet kaur</a> from Pixahive
+
+Spunik 5:- <a href="https://commons.wikimedia.org/wiki/File:%D0%92%D0%B0%D0%BA%D1%86%D0%B8%D0%BD%D0%B0_%D0%A1%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_V.jpg">Mos.ru</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons
+Pfizer–BioNTech:- <a href="https://commons.wikimedia.org/wiki/File:Pfizer-BioNTech_COVID-19_vaccine_(2020)_E.jpg">U.S. Secretary of Defense</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+Sinopharm:- <a href="https://commons.wikimedia.org/wiki/File:Sinopharm_COVID-19_vaccine_(2021)_K.jpeg">Ministerio de Defensa del Perú from Perú, Perú</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons

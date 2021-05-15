@@ -4,176 +4,90 @@ export default function CreditsComponent({ setCreditsPopUpOpen }) {
   function renderCreditItems() {
     return (
       <div className="text-left credits-text-container overflow-y-scroll">
-        Food1:- Image by{" "}
-        <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867398">
-          Pexels
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1867398">
-          Pixabay
-        </a>
+        Information sources:- Wikipedia, Outlookindia articles, Bharat Biotech,
+        Pharmeasy
         <br />
-        Food2:- Image by{" "}
-        <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154587">
-          OpenClipart-Vectors
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154587">
-          Pixabay
-        </a>
+        <b>Note:</b> Although I have taken utmost care to as factually correct
+        as possible and taken information only from verified sources, if you
+        find any discrepancies in the information or media used in this app,
+        then kindly reach out to me on my twitter handle{" "}
+        <a href="https://twitter.com/coderwhodreams">@coderwhodreams</a> for
+        corrections
         <br />
-        Food3:- Image by{" "}
-        <a href="https://pixabay.com/users/luiza_83-7899109/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4851545">
-          Luiza Kawala
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4851545">
-          Pixabay
-        </a>
+        Vaccine icons:-
+        <div>
+          Icons made by{" "}
+          <a
+            href="https://www.flaticon.com/authors/smashicons"
+            title="Smashicons"
+          >
+            Smashicons
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a href="https://www.flaticon.com/authors/mavadee" title="mavadee">
+            mavadee
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        <div>
+          Icons made by{" "}
+          <a href="https://www.freepik.com" title="Freepik">
+            Freepik
+          </a>{" "}
+          from{" "}
+          <a href="https://www.flaticon.com/" title="Flaticon">
+            www.flaticon.com
+          </a>
+        </div>
+        Vaccine Images:-
         <br />
-        Tech1:- Image by{" "}
-        <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154312">
-          OpenClipart-Vectors
+        Covishield:- Photo by{" "}
+        <a href="https://pixahive.com/portfolio/inderpreetkaur/">
+          Inderpreet kaur
         </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154312">
-          Pixabay
-        </a>
+        from Pixahive
         <br />
-        Tech2:- Image by{" "}
-        <a href="https://pixabay.com/users/talhakhalil007-5671515/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4284157">
-          talha khalil
+        Covishield2:- Photo by{" "}
+        <a href="https://pixahive.com/portfolio/inderpreetkaur/">
+          Inderpreet kaur
         </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4284157">
-          Pixabay
-        </a>
+        from Pixahive
         <br />
-        Travel1:- Image by{" "}
-        <a href="https://pixabay.com/users/jebbuchman-8528845/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3271579">
-          Jeb Buchman
+        Covaxin:- Photo by{" "}
+        <a href="https://pixahive.com/portfolio/inderpreetkaur/">
+          Inderpreet kaur
         </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3271579">
-          Pixabay
-        </a>
+        from Pixahive
         <br />
-        Travel2:- Image by{" "}
-        <a href="https://pixabay.com/users/felixmittermeier-4397258/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4423621">
-          FelixMittermeier
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4423621">
-          Pixabay
+        Spunik 5:-{" "}
+        <a href="https://commons.wikimedia.org/wiki/File:%D0%92%D0%B0%D0%BA%D1%86%D0%B8%D0%BD%D0%B0_%D0%A1%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_V.jpg">
+          Mos.ru
         </a>
+        , <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>,
+        via Wikimedia Commons
         <br />
-        Entertainment1:- Image by{" "}
-        <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=690685">
-          Free-Photos
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=690685">
-          Pixabay
+        Pfizer–BioNTech:-{" "}
+        <a href="https://commons.wikimedia.org/wiki/File:Pfizer-BioNTech_COVID-19_vaccine_(2020)_E.jpg">
+          U.S. Secretary of Defense
         </a>
+        , <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>,
+        via Wikimedia Commons
         <br />
-        Entertainment2:- Image by{" "}
-        <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1031087">
-          Free-Photos
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1031087">
-          Pixabay
+        Sinopharm:-{" "}
+        <a href="https://commons.wikimedia.org/wiki/File:Sinopharm_COVID-19_vaccine_(2021)_K.jpeg">
+          Ministerio de Defensa del Perú from Perú, Perú
         </a>
-        <br />
-        Science1:- Image by{" "}
-        <a href="https://pixabay.com/users/wikiimages-1897/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=11111">
-          WikiImages
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=11111">
-          Pixabay
-        </a>
-        <br />
-        Science2:- Image by{" "}
-        <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154734">
-          OpenClipart-Vectors
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=154734">
-          Pixabay
-        </a>
-        <br />
-        Fitness1:- Image by{" "}
-        <a href="https://pixabay.com/users/gdj-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1837460">
-          Gordon Johnson
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1837460">
-          Pixabay
-        </a>
-        <br />
-        Fitness2:- Image by{" "}
-        <a href="https://pixabay.com/users/mohamed_hassan-5229782/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3179985">
-          mohamed Hassan
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3179985">
-          Pixabay
-        </a>
-        <br />
-        School1:- Image by{" "}
-        <a href="https://pixabay.com/users/lucasgrey-679745/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4828404">
-          Łukasz Siwy
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4828404">
-          Pixabay
-        </a>
-        <br />
-        School2:- Image by{" "}
-        <a href="https://pixabay.com/users/azamkamolov-2854934/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1545578">
-          AzamKamolov
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1545578">
-          Pixabay
-        </a>
-        <br />
-        Gaming1:- Image by{" "}
-        <a href="https://pixabay.com/users/dg-ra-4854875/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3634586">
-          Rafael Javier
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3634586">
-          Pixabay
-        </a>
-        <br />
-        Gaming2:- Image by{" "}
-        <a href="https://pixabay.com/users/pencilparker-7519217/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3045125">
-          pencil parker
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3045125">
-          Pixabay
-        </a>
-        <br />
-        Social1:- Image by{" "}
-        <a href="https://pixabay.com/users/janjf93-3084263/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2311259">
-          janjf93
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2311259">
-          Pixabay
-        </a>
-        <br />
-        Social2:- Image by{" "}
-        <a href="https://pixabay.com/users/gdj-1086657/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3846597">
-          Gordon Johnson
-        </a>{" "}
-        from{" "}
-        <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3846597">
-          Pixabay
-        </a>
+        , <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>,
+        via Wikimedia Commons
       </div>
     );
   }

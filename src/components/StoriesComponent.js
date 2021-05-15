@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Stories from "react-insta-stories";
 import { useRouteMatch, useHistory } from "react-router-dom";
-import StoriesData from "../dataSource/storiesData";
+import vaccineData from "../dataSource/vaccineData";
 import Fade from "react-reveal/Fade";
 import "./StoriesComponent.css";
 export default function StoriesSection() {
@@ -20,7 +20,8 @@ export default function StoriesSection() {
   }
   function getStoriesObject() {
     const category = match.params.categoryName;
-    const stories = StoriesData[category].map((item) => {
+    console.log(vaccineData, category);
+    const stories = vaccineData[category].map((item) => {
       if (item.type === "imageCaptionPost") {
         return {
           content: (props) => (
@@ -47,23 +48,25 @@ export default function StoriesSection() {
               style={{ backgroundColor: item.bgColor }}
             >
               <div className="max-w-screen-md flex items-center justify-center flex-col">
-                <div className="mt-10 text-x">
+                <div className="mt-10 text-xl">
                   <span>{item.title}</span>
                 </div>
-                <div className="flex flex justify-center items-center mt-2 text-story-image-container">
-                  <div style={{ display: loading ? "block" : "none" }}>
-                    {renderLoading()}
+                {item.image ? (
+                  <div className="flex flex justify-center items-center mt-2 text-story-image-container">
+                    <div style={{ display: loading ? "block" : "none" }}>
+                      {renderLoading()}
+                    </div>
+                    <div style={{ display: loading ? "none" : "block" }}>
+                      <img
+                        src={item.image}
+                        alt="stories"
+                        className="h-6/12"
+                        onLoad={() => setLoading(false)}
+                      />
+                    </div>
                   </div>
-                  <div style={{ display: loading ? "none" : "block" }}>
-                    <img
-                      src={item.image}
-                      alt="stories"
-                      className="h-6/12"
-                      onLoad={() => setLoading(false)}
-                    />
-                  </div>
-                </div>
-                <div className="mt-6 caption text-lg text-left mx-3 max-w-screen-md">
+                ) : null}
+                <div className="mt-2 caption text-lg text-left mx-3 max-w-screen-md">
                   <span className="whitespace-pre-wrap">{item.text}</span>
                 </div>
               </div>
