@@ -13,3 +13,9 @@
   height: 50px;
   animation: spin 2s linear infinite;
 }
+
+@media screen and (min-width: 600px) {
+  .story-image {
+    max-height: 200px;
+  }
+}

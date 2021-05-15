@@ -20,7 +20,6 @@ export default function StoriesSection() {
   }
   function getStoriesObject() {
     const category = match.params.categoryName;
-    console.log(vaccineData, category);
     const stories = vaccineData[category].map((item) => {
       if (item.type === "imageCaptionPost") {
         return {
@@ -60,7 +59,7 @@ export default function StoriesSection() {
                       <img
                         src={item.image}
                         alt="vaccine-info"
-                        className="h-6/12"
+                        className="h-6/12 story-image"
                         onLoad={() => setLoading(false)}
                       />
                     </div>
