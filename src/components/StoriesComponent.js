@@ -83,7 +83,7 @@ export default function StoriesSection() {
       <Fade right>
         <Stories
           stories={getStoriesObject()}
-          defaultInterval={5000}
+          defaultInterval={10000}
           width={"100%"}
           height="100vh"
           onAllStoriesEnd={redirectToHome}
