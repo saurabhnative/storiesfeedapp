@@ -20,7 +20,7 @@ export default function StoriesSection() {
   }
   function getStoriesObject() {
     const category = match.params.categoryName;
-    const stories = vaccineData[category].map((item) => {
+    const stories = vaccineData[category].map((item, index) => {
       if (item.type === "imageCaptionPost") {
         return {
           content: (props) => (
@@ -45,6 +45,7 @@ export default function StoriesSection() {
             <div
               className="story-container h-screen w-screen bg-center bg-no-repeat bg-black text-white font-bold flex items-start justify-center"
               style={{ backgroundColor: item.bgColor }}
+              tabIndex={index}
             >
               <div className="max-w-screen-md flex items-center justify-center flex-col">
                 <div className="mt-10 text-xl">

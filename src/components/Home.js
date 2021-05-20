@@ -11,12 +11,13 @@ export default function Home() {
     history.push(`/story/${categoryItem.name.toLowerCase()}`);
   }
   function renderCategoryItem() {
-    return vaccineNames.map((categoryItem) => {
+    return vaccineNames.map((categoryItem, index) => {
       return (
         <div
           className="flex justify-center items-center flex-col mt-4 cursor-pointer"
           key={categoryItem.name + categoryItem.iconName}
           onClick={() => redirectToStory(categoryItem)}
+          tabIndex={2 + index}
         >
           <div className="category-outer-circle flex justify-center items-center">
             <div className="category-inner-circle flex justify-center items-center">
@@ -31,12 +32,14 @@ export default function Home() {
   return (
     <div>
       <div className="header text-white flex justify-center items-center text-2xl font-bold">
-        <div>Covid Vaccines Information</div>
+        <div tabIndex="1">Covid Vaccines Information</div>
         <div
           className="fixed top-3 right-1 cursor-pointer"
           onClick={() => setCreditsPopUpOpen(true)}
         >
-          <i className="material-icons text-3xl">info</i>
+          <i tabIndex="2" className="material-icons text-3xl">
+            info
+          </i>
         </div>
       </div>
       <div className="flex justify-center items-center">
