@@ -12,7 +12,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1620925611/StoriesFeedCompressed/Screenshot_2021-05-13_at_10.36.26_PM_pbtl8u.png" alt="shields" style="width: 200px; height: 300px;">
+<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1620925611/StoriesFeedCompressed/Screenshot_2021-05-13_at_10.36.26_PM_pbtl8u.png" alt="shields" width= "200">
 
   
   
