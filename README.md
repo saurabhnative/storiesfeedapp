@@ -1,57 +1,38 @@
-<h1 align="center">Storied Feed App</h1>
+# Stories Feed App
+### This application can be used to learn interesting facts about various categories like technology and fitness via stories
 
-<p align="center"><img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1629997996/Blogimages/Screenshot_2021-08-26_at_10.42.40_PM_mthcl8.png" alt="project"></p>
+App screenshots:-   
+<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1620925611/StoriesFeedCompressed/Screenshot_2021-05-13_at_10.36.26_PM_pbtl8u.png" width="200"/> 
 
-<p>This application can be used to learn interesting facts about various categories like technology and fitness via stories</p>
+App demo:- https://stories-feed-app.netlify.app/
 
-<p align="center"><img src="https://img.shields.io/github/issues/saurabhnative/storiesfeedapp" alt="shields"><img src="https://img.shields.io/github/license/saurabhnative/storiesfeedapp" alt="shields"><img src="https://img.shields.io/github/forks/saurabhnative/storiesfeedapp" alt="shields"></p>
+Youtube Video Tutorial:- https://www.youtube.com/watch?v=59SW6vZ2L2Y&list=PLZ1FmiaTE30W5c9rj12ITvGGkbxSc0wPz
 
-<h2>🚀 Demo</h2>
+Hashnode article series:- https://coderwhodreams.hashnode.dev/series/stories-feed
 
-[https://stories-feed-app.netlify.app/]( https://stories-feed-app.netlify.app/)
 
-<h2>Project Screenshots:</h2>
+## Scripts to start project
 
-<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1620925611/StoriesFeedCompressed/Screenshot_2021-05-13_at_10.36.26_PM_pbtl8u.png" alt="shields" width="200" height="400&quot;/">
+In the project directory, you can run:
 
-  
-  
-<h2>🧐 Features</h2>
+### `yarn start`
 
-Here're some of the project's best features:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-*   News about various categories delivered in form of stories
-*   New from over 9 distinct categories
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-<h2>🛠️ Installation Steps:</h2>
+### `yarn test`
 
-<p>1. Run the app in development mode</p>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```
-yarn start
-```
+### `yarn build`
 
-<p>2. Launch the test runner in the interactive watch mode.</p>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-yarn test
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<p>3. Build the app for production to the build folder.</p>
-
-```
-yarn build
-```
-
-  
-  
-<h2>💻 Built with</h2>
-
-Technologies used in the project:
-
-*   Reactjs
-*   TailwindCSS
-
-<h2>🛡️ License:</h2>
-
-This project is licensed under the MIT License
