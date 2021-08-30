@@ -3,7 +3,6 @@
 
 App screenshots:-   
 <img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1620925611/StoriesFeedCompressed/Screenshot_2021-05-13_at_10.36.26_PM_pbtl8u.png" width="200"/> 
-<img src="https://res.cloudinary.com/dk22rcdch/image/upload/v1620925611/StoriesFeedCompressed/Screenshot_2021-05-13_at_6.12.41_PM_rahf8x.png" width="200"/> 
 
 App demo:- https://stories-feed-app.netlify.app/
 
